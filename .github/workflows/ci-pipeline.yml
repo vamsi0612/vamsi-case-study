@@ -26,7 +26,7 @@ jobs:
 
       - name: Start Docker Container
         run: |
-          docker run -d \
+          sudo docker run -d \
             --name my-container \
             -p 8080:80 \
             nginx:latest
